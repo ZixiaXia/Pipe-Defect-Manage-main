@@ -1,4 +1,4 @@
-# Pipe-Defect-Manage
+# PipeDefectManage
 
 An AI-based sewer pipe inspection system.
 
