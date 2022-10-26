@@ -1,21 +1,21 @@
 # Pipe-Defect-Manage
 
-一个排水管道缺陷管理系统。
+An AI-based sewer pipe inspection system.
 
-#### 功能
+#### Features
 
-* [x] 统计
-* [x] 工程管理
-* [x] 管线管理
-* [x] 管点管理
-* [x] 缺陷管理
-* [x] 报告自动生成
-* [x] 缺陷标注
-* [x] 自动检测（语义分割、分类）
-* [x] bounding box标注
-* [ ] 语义分割标注（SVG形式存储）
+* [x] statistics
+* [x] project management
+* [x] pipe line management
+* [x] pipe point management
+* [x] deficit management
+* [x] automatic generation of report
+* [x] deficit annotation
+* [x] automatic detection（semantic segmentation - PipeUNet, classification, localization - YOLO v5）
+* [x] annotation of bounding box
+* [ ] annotation of segmentation（saved as SVG）
 
-#### 技术
+#### Tech
 
 - django
 - react
@@ -24,18 +24,18 @@
 - sqlite3
 - pyinstaller
 
-#### 打包发布
+#### Publish
 
 - manage.spec: pyinstaller manage.spec
 
 - generate react exe: [frontend/electron/readme.md](frontend/electron/readme.md)
 
-#### 其它
+#### Others
 
-- 因浏览器安全限制，部分功能需electron打包才能使用。
+- Limited by the browser safaty mechanism, some features could only be available after published (such as reading video path from local file system).
 
-- 运行django并隐藏CMD窗口：start.bat & start.vbs 
+- Run Django and get CMD hidden：start.bat & start.vbs 
 
-#### 更新日志
+#### Update log
 
-`2022-`:不再需要手动输入文件路径
+`2022-`: no longer need to manually type video path
