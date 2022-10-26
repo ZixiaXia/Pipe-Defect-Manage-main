@@ -1,0 +1,64 @@
+.ant-table table {
+    font-size: 15px;
+}
+
+.video-style {
+    width: 90%;
+    height: auto;
+    max-height: 75vh;
+}
+
+video {
+    background: black;
+}
+
+/*全屏按钮*/
+video::-webkit-media-controls-fullscreen-button {
+}
+
+/*播放按钮*/
+video::-webkit-media-controls-play-button {
+}
+
+/*进度条*/
+video::-webkit-media-controls-timeline {
+    padding-left: 0;
+    width: 100%;
+}
+
+/*观看的当前时间*/
+video::-webkit-media-controls-current-time-display {
+}
+
+/*剩余时间*/
+video::-webkit-media-controls-time-remaining-display {
+}
+
+/*音量按钮*/
+video::-webkit-media-controls-mute-button {
+}
+
+video::-webkit-media-controls-toggle-closed-captions-button {
+}
+
+/*音量的控制条*/
+video::-webkit-media-controls-volume-slider {
+}
+
+/*所有控件*/
+video::-webkit-media-controls-enclosure {
+}
+
+/*设置不可选中*/
+.can-not-select {
+    -webkit-user-select: none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    -ms-user-select:none;
+}
+
+/*解决之前图标总是向下偏的问题，通过F12调试得出问题所在*/
+.anticon {
+    /*padding-bottom: 9px;*/
+    vertical-align:0;
+}
